@@ -502,16 +502,6 @@ summary::marker {
     border-bottom: 1px solid #cacaca;
 }
 
-.FAQ__question {
-    transition: border-color .2s ease-in-out;
-}
-
-.FAQ__question:hover {
-    border-top-color: 1px solid #FF9900;
-    border-bottom-color: 1px solid #FF9900;
-    
-}
-
 .FAQ__title {
     display: flex;
     align-items: center;
