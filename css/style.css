@@ -560,7 +560,7 @@ summary::marker {
     margin-right: 25px;
 }
 
-.social__link-icon {
+.social__link-icon path{
     transition: fill .2s ease-in-out;
 }
 
