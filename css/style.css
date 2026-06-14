@@ -376,7 +376,6 @@ p {
     line-height: 1;
     color: #333;
     font-weight: normal;
-    transform: translateX(-5px);
 }
 
 .our-job__item:not(:last-child) {
@@ -384,7 +383,9 @@ p {
 }
 
 .our-job__button {
+    padding: 0;
     border: 0;
+    background-color: transparent;
     transition: color .2s ease-in-out;
 }
 
@@ -867,6 +868,14 @@ textarea::placeholder {
 
   .card__article {
     margin-left: 25px;
+  }
+
+  .our-job__menu {
+    justify-content: space-between;
+  }
+
+  .our-job__item {
+    margin-right: 0;
   }
 
   .our-job__card {
