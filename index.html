@@ -6,6 +6,8 @@
   <title>Евклид</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -51,6 +53,14 @@
   </header>
   <section class="preview container">
     <div class="preview__container">
+      <div class="swiper">  
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('/img/preview.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('/img/pic_1.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('/img/pic_2.jpg');"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="preview__content">
         <h1 class="preview__title">Проектные решения любой сложности</h1>
         <p class="preview__descrition">
@@ -59,6 +69,7 @@
         <button class="button preview__button">Заказать расчёт</button>
       </div>
     </div>
+    <script src="swiper.js"></script>
   </section>
   <section class="about-us">
     <div class="container">

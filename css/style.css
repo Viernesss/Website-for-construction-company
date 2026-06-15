@@ -192,10 +192,26 @@ p {
 
 /* Preview */
 .preview__container {
-    background-image: url(../img/preview.jpg);
+    position: relative;
+}
+
+.swiper {
+    height: 620px;
+    z-index: -1;
+}
+
+.swiper-slide {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.preview__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .preview__content {
@@ -789,6 +805,10 @@ textarea::placeholder {
   .header__button {
     margin-left: 0;
   }
+  
+  .swiper {
+    height: 668px;
+  }
 
   .preview__content {
     width: 100%;
@@ -835,12 +855,16 @@ textarea::placeholder {
 
 
 @media (max-width: 768px) {
-.preview__content {
+  .swiper {
+    height: 662px;
+  }
+
+  .preview__content {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-.preview__title {
+  .preview__title {
     font-size: 50px;
   }
 
@@ -916,9 +940,17 @@ textarea::placeholder {
     margin-bottom: 60px;
   }
 
+  .button {
+    height: 40px;
+  }
+
   .header__logo {
     width: 110px;
     height: 35px;
+  }
+
+  .swiper {
+    height: 308px;
   }
 
   .preview__content {
@@ -938,7 +970,6 @@ textarea::placeholder {
 
   .preview__button {
     width: 162px;
-    height: 40px;
     margin-top: 30px;
     font-size: 12px;
   }
@@ -984,13 +1015,10 @@ textarea::placeholder {
   .details__button {
     margin-left: 0;
     width: 162px;
-    height: 40px;
     color: #FF9900;
     font-size: 12px;
     border-width: 2px;
   }
-
-  
 
   .card__item {
     height: auto;
@@ -1054,13 +1082,11 @@ textarea::placeholder {
 
   .button__podr {
     width: 162px;
-    height: 40px;
     font-size: 12px;
   }
 
   .button__deal {
     width: 118px;
-    height: 40px;
     margin-left: auto;
     font-size: 12px;
   }
@@ -1084,10 +1110,10 @@ textarea::placeholder {
     height: 30px;
   }
 
-.footer__container {
+  .footer__container {
     padding-bottom: 30px;
     padding-top: 30px;
-}
+  }
 
   .application__input {
     width: 290px;
@@ -1107,7 +1133,6 @@ textarea::placeholder {
 
   .button-send {
     width: 180px;
-    height: 40px;
     font-size: 12px;
   }
 
@@ -1122,7 +1147,7 @@ textarea::placeholder {
   }
 
   .social__logo {
-    width: 131px;
+    width: 100%;
     height: 42px;
   }
 
