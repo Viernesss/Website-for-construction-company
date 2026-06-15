@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="tabs.js"></script>
 </head>
 <body>
   <header class="header">
@@ -126,19 +127,19 @@
       <h2 class="title">Как мы работаем</h2>
       <ul class="our-job__menu">
         <li class="our-job__item">
-          <button class="our-job__button">1 шаг</button>
+          <button class="our-job__button" data-path="one">1 шаг</button>
         </li>
         <li class="our-job__item">
-          <button class="our-job__button">2 шаг</button>
+          <button class="our-job__button" data-path="two">2 шаг</button>
         </li>
         <li class="our-job__item">
-          <button class="our-job__button">3 шаг</button>
+          <button class="our-job__button" data-path="three">3 шаг</button>
         </li>
         <li class="our-job__item">
-          <button class="our-job__button">4 шаг</button>
+          <button class="our-job__button" data-path="four">4 шаг</button>
         </li>
       </ul>
-      <div class="our-job__card">
+      <div class="our-job__card our-job__card-active" data-target="one">
         <div class="our-job__article">
           <span class="our-job__title">Проводим консультацию</span>
           <p class="our-job__text">
@@ -149,11 +150,54 @@
             <button class="button button__deal">Договор</button>
           </div>
         </div>
-        <!-- <div class="our-job__img"></div> -->
         <div class="our-job__right">
           <img class="our-job__img" src="/img/our-job.jpg" alt="job">
         </div>
-        <!-- <img class="our-job__img" src="/img/our-job.jpg" alt="job"> -->
+      </div>
+      <div class="our-job__card" data-target="two">
+        <div class="our-job__article">
+          <span class="our-job__title">Составляем смету</span>
+          <p class="our-job__text">
+            Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+          </p>
+          <div class="group-button">
+            <button class="button button__podr">Подробнее</button>
+            <button class="button button__deal">Договор</button>
+          </div>
+        </div>
+        <div class="our-job__right">
+          <img class="our-job__img" src="/img/our-job1.jpg" alt="job">
+        </div>
+      </div>
+      <div class="our-job__card" data-target="three">
+        <div class="our-job__article">
+          <span class="our-job__title">Привлекаем подрядчиков</span>
+          <p class="our-job__text">
+            Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+          </p>
+          <div class="group-button">
+            <button class="button button__podr">Подробнее</button>
+            <button class="button button__deal">Договор</button>
+          </div>
+        </div>
+        <div class="our-job__right">
+          <img class="our-job__img" src="/img/our-job2.jpg" alt="job">
+        </div>
+      </div>
+      <div class="our-job__card" data-target="four">
+        <div class="our-job__article">
+          <span class="our-job__title">Инспектируем все этапы работ</span>
+          <p class="our-job__text">
+            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+          </p>
+          <div class="group-button">
+            <button class="button button__podr">Подробнее</button>
+            <button class="button button__deal">Договор</button>
+          </div>
+        </div>
+        <div class="our-job__right">
+          <img class="our-job__img" src="/img/our-job3.jpg" alt="job">
+        </div>
       </div>
     </div>
   </section>

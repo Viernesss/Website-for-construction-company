@@ -137,6 +137,7 @@ p {
 
 .nav__link:hover {
     border-bottom: 2px solid #FF9900;
+    cursor: pointer;
 }
 
 .nav__link:active {
@@ -246,6 +247,7 @@ p {
 
 .preview__button:hover {
     background-color: rgba(255,153,0,0.7);
+    cursor: pointer;
 }
 
 .preview__button:active {
@@ -317,6 +319,7 @@ p {
 
 .details__button:hover {
     background-color: #FF9900;
+    cursor: pointer;
 }
 
 .details__button:active {
@@ -402,16 +405,15 @@ p {
     padding: 0;
     border: 0;
     background-color: transparent;
-    transition: color .2s ease-in-out;
 }
 
 .our-job__button:hover {
     color: #FF9900;
+    cursor: pointer;
 }
 
 
 .our-job__button:active {
-    transition-duration: .1s;
     color: #E1670E;
 }
 
@@ -420,9 +422,13 @@ p {
 }
 
 .our-job__card {
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-top: 47px;
+}
+
+.our-job__card-active {
+    display: flex;
 }
 
 .our-job__article {
@@ -455,6 +461,7 @@ p {
 
 .button__podr:hover {
     background-color: rgba(255,153,0,0.7);
+    cursor: pointer;
 }
 
 .button__podr:active {
@@ -483,6 +490,7 @@ p {
     border-color: #666;
     color: #fff;
     background-color: #666;
+    cursor: pointer;
 }
 
 .button__deal:active {
@@ -499,23 +507,16 @@ p {
     outline: 0;
 }
 
-/* .our-job__img {
-    width: 870px;
-    height: 460px;
-    margin-top: 10px;
-} */
-
 .our-job__right {
     width: 50%;
     margin-top: 10px;
 }
 
 .our-job__img {
-    width: 100%;
+    width: 870px;
     height: 100%;
     object-fit: cover;
 }
-
 
 /* FAQ */
 summary::marker {
@@ -563,6 +564,7 @@ summary::marker {
     transform: translateY(4px);
     padding-left: 10px;
     padding-right: 4px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .FAQ__title ellipse, path {
@@ -575,6 +577,10 @@ summary::marker {
 
 .FAQ__question:hover .FAQ__title path{
     fill: #FFF;
+}
+
+.FAQ__question[open] .FAQ__icon {
+    transform: rotate(45deg);
 }
 
 /* Footer */
@@ -725,6 +731,7 @@ textarea::placeholder {
 
 .button-send:hover {
     background-color: rgba(255,153,0,0.7);
+    cursor: pointer;
 }
 
 .button-send:active {
@@ -1140,6 +1147,7 @@ textarea::placeholder {
     margin-top: 20px;
     margin-left: 0;
     font-size: 16px;
+    cursor: pointer;
   }
 
   .social {
