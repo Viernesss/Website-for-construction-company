@@ -98,7 +98,6 @@ p {
 .header__container {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding-top: 10px;
     height: 100%;
 }
@@ -274,7 +273,6 @@ p {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    /* justify-content: space-between; */
 }
 
 .details {
@@ -337,7 +335,6 @@ p {
     margin-left: 32px;
     display: flex;
     flex-direction: column; 
-    /* padding-top: 50px; */
 }
 
 .card__item {
@@ -357,8 +354,6 @@ p {
     padding-top: 65px;
     padding-left: 60px;
     padding-bottom: 65px;
-    /* width: 190px;
-    height: 165px; */
 }
 
 .card__article {
@@ -1163,5 +1158,4 @@ textarea::placeholder {
     width: 40px;
     height: 40px;
   }
-
 }
